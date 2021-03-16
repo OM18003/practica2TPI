@@ -11,8 +11,8 @@ class CirculoController extends Controller
     private $centroY;
 
 
-    public function area(Request $request){
-        
+    public function area(){
+        return 2;        
     }
 
     public function perimetro(Request $request)
