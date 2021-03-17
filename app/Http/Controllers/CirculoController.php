@@ -11,9 +11,9 @@ class CirculoController extends Controller
     private $centroY;
 
     public function __construct($radio,$centroX,$centroY) {
-        $this->$radio = $radio;
-        $this->$centroX = $centroX;
-        $this->$centroY = $centroY;
+        $this->radio = $radio;
+        $this->centroX = $centroX;
+        $this->centroY = $centroY;
     }
 
     public function area(){

@@ -24,14 +24,14 @@ class CirculoControllerTest extends TestCase
 
     {
         $this->circulo = new CirculoController(2, 2, 2);
-        $areaResultado = $this->circulo->area();        
-        $this->assertNotNull($areaResultado);
+        $areaResultado = $this->circulo->area();      
+        $this->assertEquals($areaResultado, 12.566370614359);
     }
-
+    
     public function test_perimetro()
     {
         $this->circulo = new CirculoController(2, 2, 2);
-        $areaResultado = $this->circulo->perimetro();        
-        $this->assertNotNull($areaResultado);
+        $perimetroResultado = $this->circulo->perimetro();                
+        $this->assertEquals($perimetroResultado, 19.739208802179);
     }
 }
